@@ -11,24 +11,17 @@ namespace VetDiet.Controllers
     [Route("/vetDiet")]
     public class VetDietController : ControllerBase
     {
-        [HttpGet("Appeal")]
-        public string Information(string str)
+        [HttpPost("AddIllDiet")]
+        public string AddIllDiet(string str)
         {
-            return str;
+            return str;//добав. заболев. диет.
         }
 
-        [HttpPost("Conclusion")]
-        public string Makinп(string str)
+        [HttpPost("SelectServDiet")]
+        public string SelectServDiet(string str)
         {
-            return str;
+            return str;//выбор услуги диет
         }
-
-        [HttpPost("Make")]
-        public string Evaluation(string str)
-        {
-            return str;
-        }
-
 
     }
 }
