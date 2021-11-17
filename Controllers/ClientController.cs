@@ -11,28 +11,40 @@ namespace Client.Controllers
     [Route("/client")]
     public class ClientController : ControllerBase
     {
-        [HttpPost("Adding")]
-        public string Information(string str)
+        [HttpPost("Reg")]
+        public string Reg(string str)
         {
-            return str;
+            return str;//регистрация
         }
 
-        [HttpPost("Recording")]
-        public string Makinп(string str)
+        [HttpGet("Avtoriz")]
+        public string Avtoriz(string str)
         {
-            return str;
+            return str;//авторизация
         }
 
-        [HttpPost("Appeal")]
-        public string Evaluation(string str)
+        [HttpPost("AddPet")]
+        public string AddPet(string str)
         {
-            return str;
+            return str;//добавление животного
         }
 
-        [HttpGet("Conclusion")]
-        public string Price(string str)
+        [HttpGet("ViewAppeal")]
+        public string ViewAppeal(string str)
         {
-            return str;
+            return str;//просмотр обращ.
+        }
+
+        [HttpPost("MakeUpApp")]
+        public string MakeUpApp(string str)
+        {
+            return str;//составл. обращ.
+        }
+
+        [HttpGet("ViewConclusion")]
+        public string ViewConclusion(string str)
+        {
+            return str;//просмотр заключ.
         }
 
     }
