@@ -11,28 +11,52 @@ namespace Operator.Controllers
     [Route("/operator")]
     public class OperatorController : ControllerBase
     {
-        [HttpGet("Appeal")]
-        public string Information(string str)
+       [HttpPut("Moderat")]
+        public string Moderat(string str)
         {
-            return str;
+            return str;//модерация
         }
 
-        [HttpPost("Choice")]
-        public string Makinп(string str)
+        [HttpPut("Diag")]
+        public string Diag(string str)
         {
-            return str;
+            return str;//диагноз
         }
 
-        [HttpGet("Conclusion")]
-        public string Evaluation(string str)
+        [HttpPut("Ill")]
+        public string Ill(string str)
         {
-            return str;
+            return str;//заболевания
         }
 
-        [HttpPost("Notification")]
-        public string Price(string str)
+        [HttpPut("Symptom")]
+        public string Symptom(string str)
         {
-            return str;
+            return str;//симптомы
+        }
+
+        [HttpPut("Recommend")]
+        public string Recommend(string str)
+        {
+            return str;//рекоммендации
+        }
+
+        [HttpPut("Heal")]
+        public string Heal(string str)
+        {
+            return str;//метод. леч.
+        }
+
+        [HttpPut("Service")]
+        public string Service(string str)
+        {
+            return str;//услуги врач.
+        }
+
+        [HttpPut("Status")]
+        public string Status(string str)
+        {
+            return str;//статус обращ.
         }
 
     }
