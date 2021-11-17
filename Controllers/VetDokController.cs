@@ -11,24 +11,29 @@ namespace VetDok.Controllers
     [Route("/vetDok")]
     public class VetDokController : ControllerBase
     {
-        [HttpGet("Appeal")]
-        public string Information(string str)
+        [HttpPut("Review")]
+        public string Review(string str)
         {
-            return str;
+            return str;//рассмотрение
         }
 
-        [HttpPost("Conclusion")]
-        public string Makinп(string str)
+        [HttpPost("MakeUpConcl")]
+        public string MakeUpConcl(string str)
         {
-            return str;
+            return str;//сост. заключ.
         }
 
-        [HttpPost("Make")]
-        public string Evaluation(string str)
+        [HttpPost("SelectServDok")]
+        public string SelectServDok(string str)
         {
-            return str;
+            return str;//выбор услуги док.
         }
 
+        [HttpPost("AddIllDok")]
+        public string AddIllDok(string str)
+        {
+            return str;//добав. заболев. док.
+        }
 
     }
 }
