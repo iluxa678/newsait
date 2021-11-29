@@ -67,4 +67,8 @@
 
 ## Литература
 
-https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8
+1. https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8
+2. https://www.vetusklinika.ru/article/veterinary/care/
+3. https://enjoy-job.ru/professions/dietolog/
+4. https://docdoc.ru/library/terapevtiya/chto-lechit-vrach-terapevt
+5. http://www.chelagro.ru/about/subordinated/goals_and_objectives_of_veterinary_institutions.php
