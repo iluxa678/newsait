@@ -4,14 +4,40 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using newsait.Domains;
+using newsait.Repository;
 
-namespace Operator.Controllers
+namespace newsait.Controllers
 {
     [ApiController]
     [Route("/operator")]
     public class OperatorController : ControllerBase
     {
-       [HttpPut("Moderat")]
+        [HttpPut]
+        public Operator Create(Operator _operator)
+        {
+            Storage.OperatorStorage.Create(_operator);
+            return _operator;
+        }
+
+        [HttpGet]
+        public Operator Read(int OperatorId)
+        {
+            return Storage.OperatorStorage.Read(OperatorId);
+        }
+
+        [HttpPatch]
+        public Operator Update(int OperatorId, Operator newOperator)
+        {
+            return Storage.OperatorStorage.Update(OperatorId, newOperator);
+        }
+
+        [HttpDelete]
+        public bool Delete(int OperatorId)
+        {
+            return Storage.OperatorStorage.Delete(OperatorId);
+        }
+        [HttpPut("Moderat")]
         public string Moderat(string str)
         {
             return str;//модерация
@@ -58,6 +84,5 @@ namespace Operator.Controllers
         {
             return str;//статус обращ.
         }
-
     }
 }

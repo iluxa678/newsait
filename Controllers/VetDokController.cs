@@ -4,13 +4,40 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using newsait.Domains;
+using newsait.Repository;
 
-namespace VetDok.Controllers
+namespace newsait.Controllers
 {
     [ApiController]
     [Route("/vetDok")]
     public class VetDokController : ControllerBase
     {
+        [HttpPut]
+        public Doct Create(Doct doct)
+        {
+            Storage.DoctStorage.Create(doct);
+            return doct;
+        }
+
+        [HttpGet]
+        public Doct Read(int DoctId)
+        {
+            return Storage.DoctStorage.Read(DoctId);
+        }
+
+        [HttpPatch]
+        public Doct Update(int DoctId, Doct newDoct)
+        {
+            return Storage.DoctStorage.Update(DoctId, newDoct);
+        }
+
+        [HttpDelete]
+        public bool Delete(int DoctId)
+        {
+            return Storage.DoctStorage.Delete(DoctId);
+        }
+
         [HttpPut("Review")]
         public string Review(string str)
         {
@@ -34,6 +61,5 @@ namespace VetDok.Controllers
         {
             return str;//добав. заболев. док.
         }
-
     }
 }
