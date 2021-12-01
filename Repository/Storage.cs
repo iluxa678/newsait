@@ -21,6 +21,5 @@ namespace newsait.Repository
         public static SimptomStorage SimptomStorage { get; } = new SimptomStorage();
         public static SortPetStorage SortPetStorage { get; } = new SortPetStorage();
         public static StatusStorage StatusStorage { get; } = new StatusStorage();
-        public static OperatorStorage OperatorStorage { get; } = new OperatorStorage();
     }
 }

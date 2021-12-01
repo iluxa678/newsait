@@ -14,28 +14,28 @@ namespace newsait.Controllers
     public class OperatorController : ControllerBase
     {
         [HttpPut]
-        public Operator Create(Operator _operator)
+        public Simptom Create(Simptom simptom)
         {
-            Storage.OperatorStorage.Create(_operator);
-            return _operator;
+            Storage.SimptomStorage.Create(simptom);
+            return simptom;
         }
 
         [HttpGet]
-        public Operator Read(int OperatorId)
+        public Simptom Read(int SimptomId)
         {
-            return Storage.OperatorStorage.Read(OperatorId);
+            return Storage.SimptomStorage.Read(SimptomId);
         }
 
         [HttpPatch]
-        public Operator Update(int OperatorId, Operator newOperator)
+        public Simptom Update(int SimptomId, Simptom newSimptom)
         {
-            return Storage.OperatorStorage.Update(OperatorId, newOperator);
+            return Storage.SimptomStorage.Update(SimptomId, newSimptom);
         }
 
         [HttpDelete]
-        public bool Delete(int OperatorId)
+        public bool Delete(int SimptomId)
         {
-            return Storage.OperatorStorage.Delete(OperatorId);
+            return Storage.SimptomStorage.Delete(SimptomId);
         }
         [HttpPut("Moderat")]
         public string Moderat(string str)

@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = newsait
-build_property.ProjectDir = C:\Users\RUS\Desktop\newsait-main\
+build_property.ProjectDir = C:\Users\RUS\Documents\GitHub\newsait\

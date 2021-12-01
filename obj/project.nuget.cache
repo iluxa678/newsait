@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ry6Cq493yNPS7ZaVG5RKdAPtjpay0pIlyCH9ylfEbqGfHSbKKniLiX79V5ko43XSuFNzhPOc+X96dEG7cIBnOQ==",
+  "dgSpecHash": "LkFBWIMWmCP7hWJtWYt+x8VHQrjzVwGztThX/PtMbPBsF/4gCcYsGOPxVLs5WfD29bG2m+7Vsj1b0kwX7FAUsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RUS\\Desktop\\newsait-main\\newsait.csproj",
+  "projectFilePath": "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RUS\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\RUS\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

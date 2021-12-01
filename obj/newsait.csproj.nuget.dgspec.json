@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RUS\\Desktop\\newsait-main\\newsait.csproj": {}
+    "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RUS\\Desktop\\newsait-main\\newsait.csproj": {
+    "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RUS\\Desktop\\newsait-main\\newsait.csproj",
+        "projectUniqueName": "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj",
         "projectName": "newsait",
-        "projectPath": "C:\\Users\\RUS\\Desktop\\newsait-main\\newsait.csproj",
+        "projectPath": "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj",
         "packagesPath": "C:\\Users\\RUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RUS\\Desktop\\newsait-main\\obj\\",
+        "outputPath": "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
