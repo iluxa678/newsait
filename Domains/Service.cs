@@ -5,6 +5,6 @@ namespace newsait.Domains
         {
         public int ServiceId { get; set; }
         public char ServiceName { get; set; }
-        public char DiscriptionServ { get; set; }      
+        public char DescriptionServ { get; set; }      
         }  
 }
