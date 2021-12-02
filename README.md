@@ -145,3 +145,8 @@
 3. https://enjoy-job.ru/professions/dietolog/
 4. https://docdoc.ru/library/terapevtiya/chto-lechit-vrach-terapevt
 5. http://www.chelagro.ru/about/subordinated/goals_and_objectives_of_veterinary_institutions.php
+6. https://www.blizko.ru/products/38439-besplatnaya_konsultatsiya_veterinara_po_telefonu_s_8_00_do_22_00
+7. https://www.vet-vrn.ru/services/onlayn-konsultatsiya/
+8. https://bio-vet.ru/uslugi/zhivotnye/konsultatsiya-veterinara-online.html
+9. https://vet-dok.ru/vopros-otvet.html
+10. https://zoopt.ru/contacts/vetkonsultant/?utm_source=google&utm_medium=cpc&utm_campaign=
