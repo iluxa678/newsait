@@ -13,53 +13,41 @@ namespace newsait.Controllers
     [Route("/vetDok")]
     public class VetDokController : ControllerBase
     {
-        [HttpPut]
-        public Doct Create(Doct doct)
+        [HttpPatch("Consideration")]
+        public Appeal Update(int AppealId, Appeal newAppeal)
         {
-            Storage.DoctStorage.Create(doct);
-            return doct;
+            return Storage.AppealStorage.Update(AppealId, newAppeal);
         }
 
-        [HttpGet]
-        public Doct Read(int DoctId)
+        [HttpGet("ChoiceStatus")]
+        public Status Read2(int StatusId)
         {
-            return Storage.DoctStorage.Read(DoctId);
+            return Storage.StatusStorage.Read(StatusId);
         }
 
-        [HttpPatch]
-        public Doct Update(int DoctId, Doct newDoct)
+        [HttpPut("CreateConclusion")]
+        public Conclusion Create(Conclusion conclusion)
         {
-            return Storage.DoctStorage.Update(DoctId, newDoct);
+            Storage.ConclusionStorage.Create(conclusion);
+            return conclusion;
         }
 
-        [HttpDelete]
-        public bool Delete(int DoctId)
+        [HttpGet("ChoiceService")]
+        public Service Read(int ServiceId)
         {
-            return Storage.DoctStorage.Delete(DoctId);
+            return Storage.ServiceStorage.Read(ServiceId);
         }
 
-        [HttpPut("Review")]
-        public string Review(string str)
+        [HttpGet("ChoiceIll")]
+        public Ill Read1(int IllId)
         {
-            return str;//рассмотрение
+            return Storage.IllStorage.Read(IllId);
         }
 
-        [HttpPost("MakeUpConcl")]
-        public string MakeUpConcl(string str)
+        [HttpPatch("CompleteConclusion")]
+        public Conclusion Update2(int ConclusionId, Conclusion newConclusion)
         {
-            return str;//сост. заключ.
-        }
-
-        [HttpPost("SelectServDok")]
-        public string SelectServDok(string str)
-        {
-            return str;//выбор услуги док.
-        }
-
-        [HttpPost("AddIllDok")]
-        public string AddIllDok(string str)
-        {
-            return str;//добав. заболев. док.
+            return Storage.ConclusionStorage.Update(ConclusionId, newConclusion);
         }
     }
 }

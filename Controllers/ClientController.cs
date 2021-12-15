@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using newsait.Domains;
 using newsait.Repository;
 
@@ -13,65 +8,50 @@ namespace newsait.Controllers
     [Route("/clienti")]
     public class ClientController : ControllerBase
     {
-        [HttpPut]
+        [HttpPut("Registration")]
         public Client Create(Client client)
         {
             Storage.ClientStorage.Create(client);
             return client;
         }
 
-        [HttpGet]
+        [HttpGet("Avtorization")]
         public Client Read(int clientId)
         {
             return Storage.ClientStorage.Read(clientId);
         }
 
-        [HttpPatch]
-        public Client Update(int clientId, Client newClient)
+        [HttpPut("AddPet")]
+        public Pet Create(Pet pet)
         {
-            return Storage.ClientStorage.Update(clientId, newClient);
+            Storage.PetStorage.Create(pet);
+            return pet;
         }
 
-        [HttpDelete]
-        public bool Delete(int clientId)
+        [HttpGet("ChoisePet")]
+        public Pet Read3(int PetId)
         {
-            return Storage.ClientStorage.Delete(clientId);
-        }
-
-        [HttpPost("Reg")]
-        public string Reg(string str)
-        {
-            return str;//регистрация//
-        }
-
-        [HttpGet("Avtoriz")]
-        public string Avtoriz(string str)
-        {
-            return str;//авторизация
-        }
-
-        [HttpPost("AddPet")]
-        public string AddPet(string str)
-        {
-            return str;//добавление животного
+            return Storage.PetStorage.Read(PetId);
         }
 
         [HttpGet("ViewAppeal")]
-        public string ViewAppeal(string str)
+        public Appeal Read1(int appealId)
         {
-            return str;//просмотр обращ.
-        }
-
-        [HttpPost("MakeUpApp")]
-        public string MakeUpApp(string str)
-        {
-            return str;//составл. обращ.
+            return Storage.AppealStorage.Read(appealId);
         }
 
         [HttpGet("ViewConclusion")]
-        public string ViewConclusion(string str)
+        public Conclusion Read2(int conclusionId)
         {
-            return str;//просмотр заключ.
+            return Storage.ConclusionStorage.Read(conclusionId);
         }
+
+        [HttpPut("CreatedAppeal")]
+        public Appeal Create1(Appeal appeal)
+        {
+            Storage.AppealStorage.Create(appeal);
+            return appeal;
+        }
+
     }
 }

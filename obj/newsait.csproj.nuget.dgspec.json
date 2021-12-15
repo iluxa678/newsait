@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\rsreu\\03_practice\\035\\Abramov\\newsait.csproj": {}
+    "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj": {}
   },
   "projects": {
-    "D:\\rsreu\\03_practice\\035\\Abramov\\newsait.csproj": {
+    "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\rsreu\\03_practice\\035\\Abramov\\newsait.csproj",
+        "projectUniqueName": "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj",
         "projectName": "newsait",
-        "projectPath": "D:\\rsreu\\03_practice\\035\\Abramov\\newsait.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\rsreu\\03_practice\\035\\Abramov\\obj\\",
+        "projectPath": "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\newsait.csproj",
+        "packagesPath": "C:\\Users\\RUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RUS\\Documents\\GitHub\\newsait\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,7 +42,7 @@
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

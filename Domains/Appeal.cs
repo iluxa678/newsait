@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace newsait.Domains
 {
         public class Appeal

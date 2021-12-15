@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using newsait.Domains;
 using newsait.Repository;
 
@@ -13,41 +9,22 @@ namespace newsait.Controllers
     [Route("/vetDiet")]
     public class VetDietController : ControllerBase
     {
-        [HttpPut]
-        public Doct Create(Doct doct)
+        [HttpGet("ChoiceService")]
+        public Service Read(int ServiceId)
         {
-            Storage.DoctStorage.Create(doct);
-            return doct;
+            return Storage.ServiceStorage.Read(ServiceId);
         }
 
-        [HttpGet]
-        public Doct Read(int DoctId)
+        [HttpGet("ChoiceIll")]
+        public Ill Read1(int IllId)
         {
-            return Storage.DoctStorage.Read(DoctId);
+            return Storage.IllStorage.Read(IllId);
         }
 
-        [HttpPatch]
-        public Doct Update(int DoctId, Doct newDoct)
+        [HttpPatch("CompleteConclusion")]
+        public Conclusion Update2(int ConclusionId, Conclusion newConclusion)
         {
-            return Storage.DoctStorage.Update(DoctId, newDoct);
+            return Storage.ConclusionStorage.Update(ConclusionId, newConclusion);
         }
-
-        [HttpDelete]
-        public bool Delete(int DoctId)
-        {
-            return Storage.DoctStorage.Delete(DoctId);
-        }
-        [HttpPost("AddIllDiet")]
-        public string AddIllDiet(string str)
-        {
-            return str;//добав. заболев. диет.
-        }
-
-        [HttpPost("SelectServDiet")]
-        public string SelectServDiet(string str)
-        {
-            return str;//выбор услуги диет
-        }
-
     }
 }
