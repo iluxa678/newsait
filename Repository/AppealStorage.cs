@@ -12,9 +12,9 @@ namespace newsait.Repository
             Appeals.Add(appeal.AppealId, appeal);
         }
 
-        public Appeal Read(int AppealId)
+        public Appeal Read(int appealId)
         {
-            return Appeals[AppealId];
+            return Appeals[appealId];
         }
 
         public Appeal Update(int AppealId, Appeal newAppeal)
