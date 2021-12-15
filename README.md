@@ -144,37 +144,75 @@ VetDesk - это приложение, полностью автоматизир
 По представленным диаграммам были разработанны классы: 'вид животного', 'порода животного', 'пол животного', 'клиент', 'животное', 'статус обращения', 'обращение', 'заключение', 'доктор', 'должность', 'услуга', 'симптоматика заболевания', 'заболевание', 'симптомы', 'рекомендации', 'метод лечения' и 'диагноз'.
 Примеры кода нескольких классов:
 
+Класс "Обращение":
+
 namespace newsait.Domains
 
 {
 
         public class Appeal
         
-     {
+           {
         
-        public int AppealId { get; set; }
+               public int AppealId { get; set; }
         
-        public DateTime DateAppeal { get; set; }
+               public DateTime DateAppeal { get; set; }
         
-        public Client Client { get; set; }
+               public Client Client { get; set; }
         
-        public Pet Pet { get; set; }
+               public Pet Pet { get; set; }
         
-        public string Notes { get; set; }
+               public string Notes { get; set; }
         
-        public string Description { get; set; }
+               public string Description { get; set; }
         
-        public int Lasting { get; set; }
+               public int Lasting { get; set; }
         
-        public Status Status { get; set; }
+               public Status Status { get; set; }
         
-    }  
+          }  
     
 }
 
+Класс "Клиент":
 
+namespace newsait.Domains
 
-      ....(пример кода 2-3)
+{
+
+      public class Client
+        
+         {
+        
+              public int ClientId { get; set; }
+            
+              public string ClientName { get; set; }  
+            
+        }  
+        
+}
+
+Класс "Симптомы":
+
+namespace newsait.Domains
+
+{
+
+     public class Simptom
+        
+        {
+        
+              public int SimptomId { get; set; }
+              
+              public string SimptomName { get; set; }
+              
+              public string DescriptionSimptom { get; set; } 
+              
+        }  
+        
+}
+
+Так же по представленным диаграммам были разработанны
 Были разработанны контроллеры....(пример кода 2-3)
 для взаимодействия с клиентом
 
