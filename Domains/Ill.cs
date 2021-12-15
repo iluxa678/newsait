@@ -6,6 +6,5 @@
         public string IllName { get; set; }
         public string DescriptionIll { get; set; }
         public Diag Diag { get; set; }      
-        }  
+    }  
 }
-
