@@ -9,8 +9,6 @@
 
 [4 Проверка качества](#check)
 
-[Заключение](#conclusion)
-
 [Список использованных источников](#litr)
 
 <a name="intro"/>
@@ -278,12 +276,6 @@ namespace newsait.Repository
 <a name="check"/>
 
 ## 4 Проверка качества
-
-<a name="conclusion"/>
-
-## Заключение
-
-ЗАКЛЮЧЕНИЕ
 
 <a name="litr"/>
 
