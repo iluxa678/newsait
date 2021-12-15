@@ -297,17 +297,9 @@ namespace newsait.Repository
 
 ## Список использованных источников
 
-1. https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8
-2. https://www.vetusklinika.ru/article/veterinary/care/
-3. https://enjoy-job.ru/professions/dietolog/
-4. https://docdoc.ru/library/terapevtiya/chto-lechit-vrach-terapevt
-5. http://www.chelagro.ru/about/subordinated/goals_and_objectives_of_veterinary_institutions.php
-6. https://www.blizko.ru/products/38439-besplatnaya_konsultatsiya_veterinara_po_telefonu_s_8_00_do_22_00
-7. https://www.vet-vrn.ru/services/onlayn-konsultatsiya/
-8. https://bio-vet.ru/uslugi/zhivotnye/konsultatsiya-veterinara-online.html
-9. https://vet-dok.ru/vopros-otvet.html
-10. https://zoopt.ru/contacts/vetkonsultant/?utm_source=google&utm_medium=cpc&utm_campaign=
-11. https://vetmanager.ru/
-12. http://vetdesk.ru/
-13. http://www.vetsoft.ru/
-14. http://www.edliny.ru/vetprog/
+[1] Население России. Wikipedia [Электронный ресурс]. – Режим доступа: https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8, свободный (дата обращения: 30.09.2021).
+[2] ВЕТЕРИНАРНАЯ КЛИНИКА "ВЕТУС". Vetusklinika [Электронный ресурс]. – Режим доступа: https://www.vetusklinika.ru/article/veterinary/care/, свободный (дата обращения: 08.10.2021).
+[3] Профессия диетолог. Enjoy-job [Электронный ресурс]. – Режим доступа: https://enjoy-job.ru/professions/dietolog/, свободный (дата обращения: 20.10.2021).
+[4] Что лечит врач-терапевт? Docdoc [Электронный ресурс]. – Режим доступа: https://docdoc.ru/library/terapevtiya/chto-lechit-vrach-terapevt, свободный (дата доступа: 5.11.2021).
+[5] Цели, задачи и предмет деятельности учреждений ветеринарии. Chelagro [Электронный ресурс]. – Режим доступа: http://www.chelagro.ru/about/subordinated/goals_and_objectives_of_veterinary_institutions.php, свободный (дата доступа: 05.11.2021).
+[6] Топ 10: Программы для ветеринарных клиник. Livemedical [Электронный ресурс]. – Режим доступа: https://www.livemedical.ru/tools/vet/, свободный (дата доступа: 07.11.2021).
