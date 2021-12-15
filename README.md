@@ -379,6 +379,84 @@ namespace newsait.Controllers
 <p align="center">
 <img src=https://user-images.githubusercontent.com/91088733/146261277-db2cd50f-b1db-4553-95ad-e5fd85c0fe55.PNG>
 <p align="center">Рисунок 7 - Список контроллеров</p> 
+
+Проверка работы методов CRUD (Create - создание, Read - чтение, Update - обновление, Delete - удаление) в контроллере Operator (рисунок 8).
+
+<p align="center">
+<img src=https://user-images.githubusercontent.com/91088733/146263260-de0cbdca-815a-4d29-b307-219b74d660bb.png>
+<p align="center">Рисунок 8 - Список методов контроллера Operator</p> 
+
+1) Create позволяет добавлять новую запись в хранилище (рисунок 9).
+<p align="center">
+<img src=https://user-images.githubusercontent.com/91088733/146264366-d206b17f-56f3-47a9-9d2f-04d86a80cfb6.png></p>
+<p align="center">Рисунок 9 - Окно метода Create в которое вносим значения полей новой записи</p> 
+
+После успешного выполнения операции сервер выдаёт ответ (см. рисунок 8).
+<p align="center">
+<img src=https://user-images.githubusercontent.com/91088733/146264541-254e8d86-d38a-496b-be75-33a060d451ec.png></p>
+<p align="center">Рисунок 10 - Результат выполнения метода Create</p> 
+
+2) Функция чтения Read похожа на функцию поиска, поскольку позволяет извлекать определенные записи и считывать их значения (см. рисунок 9).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144922014-0977f496-d0d0-4cbf-98f4-1f01a03dffea.png"></p>
+<p align="center">Рисунок 9 - Окно функции чтения</p> 
+
+Считывание информации об уже созданном авторе по его Id (см. рисунок 10).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144922348-b7a0767c-0361-4c1c-bd7c-d65c7f601e52.png"></p>
+<p align="center">Рисунок 10 - Работа с методом чтения</p> 
+
+После выполнения операции сервер выдаёт об авторе информацию, которая была создана в Create (см. рисунок 11).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144922666-7bfb2b20-e437-44c0-854c-d348933175c7.png"></p>
+<p align="center">Рисунок 11 - Результат выполнения операции чтения</p> 
+
+3) Update, редактирование записи (см. рисунок 12). Используется для изменения существующих записей в базе данных.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144923637-12647088-b199-41c0-a05b-a241792af51a.png"></p>
+<p align="center">Рисунок 12 - Окно метода обновления</p> 
+
+Измениение информации об авторе, для этого сначала нужно ввести его номер и затем новые данные (см. рисунок 13).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144923909-f62104f4-1e1f-41b8-bd9b-ca44a12700e1.png"></p>
+<p align="center">Рисунок 13 - Работа с методом обновления</p> 
+
+После выполнения операции сервер выдаёт новую информацию о том же авторе (см. рисунок 14).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144924009-de2ef562-69bc-4204-8e82-19374ac1709f.png"></p>
+<p align="center">Рисунок 14 - Результат выполнения операции обновления</p> 
+
+Функцией read проверка вышеуказанной операции. После срабатывания сервер выдает новую информацию об авторе (см. рисунок 15).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144924494-d98e66c5-0a49-4520-85e8-bc9465a5a98c.png"></p>
+<p align="center">Рисунок 15 - Результат выполнения операции чтения после обновления данных</p> 
+
+4) Delete - используется для удаления записи по Id. Если операция удаления сработает успешно, то ответ сервера будет "true", иначе "false" (см. рисунок 16).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144926022-93826b7d-8fbc-40b5-b56c-613c875e9cbd.png"></p>
+<p align="center">Рисунок 16 - Окно метода удаления</p> 
+
+Удаление автора по его Id (см. рисунок 17).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144926674-fb94a0ac-c3f5-447d-8c38-3c6c53974b15.png"></p>
+<p align="center">Рисунок 17 - Работа с методом удаления</p> 
+
+После выполнения операции ответ сервера (см. рисунок 18)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144927692-77abb517-f2e7-43d9-8d25-a13c5bb51fe3.png"></p>
+<p align="center">Рисунок 18 - Раезультат выполнения метода удаления</p> 
+
+Проверка вышеописанного действия с помощью read, считывание информацию об удалённом авторе (см. рисунок 19).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144929588-96e2f936-87dd-4f09-8a69-c0f7571bf3ea.png"></p>
+<p align="center">Рисунок 19 - Работа с операцией чтения</p> 
+
+После срабатывания программа не выдаёт информации об этом авторе (см. рисунок 20).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90477769/144929380-5666d528-52ec-46fa-979e-cd3a4db56fd9.png"></p>
+<p align="center">Рисунок 20 - Результат выполнения операции чтения после удаления данных</p> 
+
+
 ***
 
 <a name="litr"/>
