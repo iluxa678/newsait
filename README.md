@@ -74,10 +74,10 @@ VetDesk - это приложение, полностью автоматизир
 Сущность-Вет. диетолог может рассматривать обращение, составлять по нему заключение, в процессе составляя план питания.
 Сущность-Вет. врач, так же как и Вет. диетолог рассматривает обращение, составляет по нему заключение, но только составляя уже план лечения.
 
+<p align="center">
 ![usecase](https://user-images.githubusercontent.com/91088733/144324826-84dbae52-c5ce-441f-8bb2-9f63b6870ab1.png)
-<div align="center">
-Рисунок 1 - Диаграмма вариантов использования
-</div>
+<p align="center">Рисунок 1 - Диаграмма вариантов использования</p>  
+
 <Далее была разработанна диаграмма потоков данных. В результате анализа предметной области были определены основные сущности данных и действия, требующие взаимодействия с этими сущностями.
 
 Рассмотрим действия, относящиеся к Клиенту. 
@@ -95,10 +95,10 @@ VetDesk - это приложение, полностью автоматизир
 
 Действия вет. диетолога подобны действиям вет.врача. Если же вет. врач решает, что решение проблемы передаётся вет. диетологу, то уже тот в свою очередь выбирает предоставляемую услугу, подтягиваемую из сущности 'список услуг', добавляет заболевание, подтягиваемое из сущности 'заболевания', и конечные данные заносятся в сущность 'заключение'.
 
+<p align="center">
 ![DFD Diagramm](https://user-images.githubusercontent.com/91088733/144330038-89b8d92a-720e-42f7-94e3-aff8a5d954e8.png)
-<div align="center">
-Рисунок 2 - Диаграмма потоков данных
-</div>
+<p align="center">Рисунок 2 - Диаграмма потоков данных</p>  
+
 <Последняя разработанная диаграмма - это диаграмма отношений. В результате анализа предметной области были выявлены следующие сущности: вид, порода, и пол животного, клиент, животное, статус обращения, обращение, заключение, доктор, должность и услуга доктора, симптоматика заболевания, заболевание, симптомы, рекомендации, метод лечения, и диагноз.
 
 Сущность 'вид животного' характеризуется такими атрибутами, как: номер вида и наименование вида.
@@ -135,11 +135,9 @@ VetDesk - это приложение, полностью автоматизир
 
 Сущность 'диагноз' характеризуется такими атрибутами, как: номер диагноза, наименование диагноза, описание диагноза. 
 
- ![ER](https://user-images.githubusercontent.com/91088733/146170346-e3f09769-39ac-40a9-aea7-50228558e348.png)
- 
-<div align="center">
-Рисунок 3 - Диаграмма отношений
-</div>
+<p align="center">
+![ER](https://user-images.githubusercontent.com/91088733/146170346-e3f09769-39ac-40a9-aea7-50228558e348.png)
+<p align="center">Рисунок 3 - Диаграмма отношений</p>  
 
 По представленным диаграммам были разработанны классы: 'вид животного', 'порода животного', 'пол животного', 'клиент', 'животное', 'статус обращения', 'обращение', 'заключение', 'доктор', 'должность', 'услуга', 'симптоматика заболевания', 'заболевание', 'симптомы', 'рекомендации', 'метод лечения' и 'диагноз'.
 
@@ -149,31 +147,18 @@ VetDesk - это приложение, полностью автоматизир
 
 ```csharp
 namespace newsait.Domains
-
 {
-
         public class Appeal
-        
-           {
-        
-               public int AppealId { get; set; }
-        
-               public DateTime DateAppeal { get; set; }
-        
-               public Client Client { get; set; }
-        
-               public Pet Pet { get; set; }
-        
-               public string Notes { get; set; }
-        
-               public string Description { get; set; }
-        
-               public int Lasting { get; set; }
-        
-               public Status Status { get; set; }
-        
-          }  
-    
+        {
+        public int AppealId { get; set; }
+        public DateTime DateAppeal { get; set; }
+        public Client Client { get; set; }
+        public Pet Pet { get; set; }
+        public string Notes { get; set; }
+        public string Description { get; set; }
+        public int Lasting { get; set; }
+        public Status Status { get; set; }
+    }  
 }
 ```
 
@@ -181,19 +166,12 @@ namespace newsait.Domains
 
 ```csharp
 namespace newsait.Domains
-
 {
-
-      public class Client
-        
-         {
-        
-              public int ClientId { get; set; }
-            
-              public string ClientName { get; set; }  
-            
+        public class Client
+        {
+            public int ClientId { get; set; }
+            public string ClientName { get; set; }           
         }  
-        
 }
 ```
 
@@ -205,55 +183,35 @@ namespace newsait.Domains
 
 ```csharp
 using newsait.Domains;
-
 using System.Collections.Generic;
 
 namespace newsait.Repository
-
 {
-
     public class AppealStorage
-    
     {
-    
         private Dictionary<int, Appeal> Appeals { get; } = new Dictionary<int, Appeal>();
 
         public void Create(Appeal appeal)
-        
         {
-        
             Appeals.Add(appeal.AppealId, appeal);
-            
         }
 
         public Appeal Read(int appealId)
-        
         {
-        
             return Appeals[appealId];
-            
         }
 
         public Appeal Update(int AppealId, Appeal newAppeal)
-        
         {
-        
             Appeals[AppealId] = newAppeal;
-            
             return Appeals[AppealId];
-            
         }
 
         public bool Delete(int AppealId)
-        
         {
-        
             return Appeals.Remove(AppealId);
-            
         }
-        
     }
-    
 }
 ```
 
@@ -261,55 +219,35 @@ namespace newsait.Repository
 
 ```csharp
 using newsait.Domains;
-
 using System.Collections.Generic;
 
 namespace newsait.Repository
-
 {
-
     public class ClientStorage
-    
     {
-    
         private Dictionary<int, Client> Clients { get; } = new Dictionary<int, Client>();
 
         public void Create(Client client)
-        
         {
-        
             Clients.Add(client.ClientId, client);
-            
         }
 
         public Client Read(int clientId)
-        
         {
-        
             return Clients[clientId];
-            
         }
 
         public Client Update(int clientId, Client newClient)
-        
         {
-        
             Clients[clientId] = newClient;
-            
             return Clients[clientId];
-            
         }
 
         public bool Delete(int clientId)
-        
         {
-        
             return Clients.Remove(clientId);
-            
         }
-        
     }
-    
 }
 ```
 
