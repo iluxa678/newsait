@@ -374,6 +374,11 @@ namespace newsait.Controllers
 
 ## 4 Проверка качества
 
+После запуска программы открывается страница Swagger UI со списком контроллеров и их операциями над сущностями (рисунок 7).
+
+<p align="center">
+<img src=https://user-images.githubusercontent.com/91088733/146261277-db2cd50f-b1db-4553-95ad-e5fd85c0fe55.PNG>
+<p align="center">Рисунок 7 - Список контроллеров</p> 
 ***
 
 <a name="litr"/>
