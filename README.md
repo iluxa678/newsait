@@ -142,6 +142,7 @@ VetDesk - это приложение, полностью автоматизир
 </div>
 
 По представленным диаграммам были разработанны классы: 'вид животного', 'порода животного', 'пол животного', 'клиент', 'животное', 'статус обращения', 'обращение', 'заключение', 'доктор', 'должность', 'услуга', 'симптоматика заболевания', 'заболевание', 'симптомы', 'рекомендации', 'метод лечения' и 'диагноз'.
+
 Примеры кода нескольких классов:
 
 Класс "Обращение":
@@ -192,29 +193,122 @@ namespace newsait.Domains
         
 }
 
-Класс "Симптомы":
+Так же по представленным диаграммам был разработан репозиторий - то, что позволяет создавать, хранить, актуализировать и использовать информацию в системе. Эти возможности предоставленны для вышеуказанных классов.
 
-namespace newsait.Domains
+Примеры кода Хранилищь:
+
+Хранилище Обращения:
+
+using newsait.Domains;
+
+using System.Collections.Generic;
+
+namespace newsait.Repository
 
 {
 
-     public class Simptom
+    public class AppealStorage
+    
+    {
+    
+        private Dictionary<int, Appeal> Appeals { get; } = new Dictionary<int, Appeal>();
+
+        public void Create(Appeal appeal)
         
         {
         
-              public int SimptomId { get; set; }
-              
-              public string SimptomName { get; set; }
-              
-              public string DescriptionSimptom { get; set; } 
-              
-        }  
+            Appeals.Add(appeal.AppealId, appeal);
+            
+        }
+
+        public Appeal Read(int appealId)
         
+        {
+        
+            return Appeals[appealId];
+            
+        }
+
+        public Appeal Update(int AppealId, Appeal newAppeal)
+        
+        {
+        
+            Appeals[AppealId] = newAppeal;
+            
+            return Appeals[AppealId];
+            
+        }
+
+        public bool Delete(int AppealId)
+        
+        {
+        
+            return Appeals.Remove(AppealId);
+            
+        }
+        
+    }
+    
 }
 
-Так же по представленным диаграммам были разработанны
-Были разработанны контроллеры....(пример кода 2-3)
-для взаимодействия с клиентом
+Хранилище Клиентов:
+
+using newsait.Domains;
+
+using System.Collections.Generic;
+
+namespace newsait.Repository
+
+{
+
+    public class ClientStorage
+    
+    {
+    
+        private Dictionary<int, Client> Clients { get; } = new Dictionary<int, Client>();
+
+        public void Create(Client client)
+        
+        {
+        
+            Clients.Add(client.ClientId, client);
+            
+        }
+
+        public Client Read(int clientId)
+        
+        {
+        
+            return Clients[clientId];
+            
+        }
+
+        public Client Update(int clientId, Client newClient)
+        
+        {
+        
+            Clients[clientId] = newClient;
+            
+            return Clients[clientId];
+            
+        }
+
+        public bool Delete(int clientId)
+        
+        {
+        
+            return Clients.Remove(clientId);
+            
+        }
+        
+    }
+    
+}
+
+Так же по представленным диаграммам были разработанны контроллеры, применяемые для взаимодействия с клиентом: контроллер Клиента, контроллер Оператора, контроллер Вет. Диетолога и контроллер Вет. Врача.
+
+Примеры 
+
 
 <a name="check"/>
 
