@@ -396,6 +396,8 @@ namespace newsait.Controllers
 <img src=https://user-images.githubusercontent.com/91088733/146261277-db2cd50f-b1db-4553-95ad-e5fd85c0fe55.PNG>
 <p align="center">Рисунок 7 - Список контроллеров</p> 
 
+ <div name="newPage"></div>
+
 Проверка работы методов CRUD (Create - создание, Read - чтение, Update - обновление, Delete - удаление) в контроллере Operator (см. рисунок 8).
 
 <p align="center">
